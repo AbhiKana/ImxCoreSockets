@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Server
+namespace ImxCoreSockets
 {
     public class ClientServerSelector : MainManager
     {

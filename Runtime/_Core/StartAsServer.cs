@@ -3,9 +3,9 @@ using System.Net.Sockets;
 using System.Net;
 using UnityEngine.Events;
 
-namespace Server
+namespace ImxCoreSockets
 {
-    public class StartAs : MonoBehaviour
+    public class StartAsServer : MonoBehaviour
     {
         [Tooltip("Select start as a Server or Client")]
         [Header("Start as")]
@@ -33,7 +33,7 @@ namespace Server
         public void ClientStatus(bool val, int count)
         {
             OnClientConnect?.Invoke(val);
-            Debug.Log("<color=green>Connect Client: </color>" + val + " Count: " + count);
+            Debug.Log("<color=" + (count > 0 ? "green" : "red") + ">Connect Client: </color>" + val + " Count: " + count);
 
             ipAddress.text = "Client Connected: " + count;
             if (ipAddress != null && count == 0)
