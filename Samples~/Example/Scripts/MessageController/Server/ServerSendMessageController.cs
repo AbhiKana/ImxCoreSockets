@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Server
+namespace ImxCoreSockets
 {
     public class ServerSendMessageController : MonoBehaviour
     {

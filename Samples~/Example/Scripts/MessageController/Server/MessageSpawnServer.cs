@@ -17,7 +17,7 @@ public class MessagesList
     public List<Server_MessageContainer> messages;
 }
 
-namespace Server
+namespace ImxCoreSockets
 {
     public class MessageSpawnServer : MonoBehaviour
     {

@@ -10,7 +10,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed 
 ### Fixed 
 
-## [1.1.0] - 2025/10/24
+## [1.1.1] - Patch - 2025/10/24
+### Added
+### Changed
+### Fixed 
+- StreamingAssetsSource Copy mechanism
+- Updated Samples Folder
+
+## [1.1.0] - Minor - 2025/10/24
 ### Added
 - Move Client and server in One Package  
 - Create StreamingAssets BaseUrl if doesnt exist

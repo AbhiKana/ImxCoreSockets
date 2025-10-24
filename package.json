@@ -1,6 +1,6 @@
 {
     "name": "com.immersionx.imxcoresockets",
-    "version": "1.0.0",
+    "version": "1.1.1",
     "displayName": "ImxCoreSockets",
     "description": "Package for lightweight Client Server architecture apps with Events and threading",
     "unity": "2022.1",     
