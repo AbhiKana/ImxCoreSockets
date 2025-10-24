@@ -11,7 +11,7 @@
     },
     "samples":[
         {
-            "displayName": "Server",
+            "displayName": "ImxCoreSockets",
             "description": "Simple Server Manager",
             "path": "Samples~/Example"
         }       
