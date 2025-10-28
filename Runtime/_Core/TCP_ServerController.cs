@@ -217,6 +217,7 @@ namespace ImxCoreSockets
                 Debug.Log(socketException.ToString());
             }
         }
+
         public void SendMessageToEveryOne(string msg)
         {
             if (_connectedClients != null)
