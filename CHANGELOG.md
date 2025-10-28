@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed 
 ### Fixed 
 
+## [1.1.2] - Patch - 2025/10/28
+### Added
+- MessageListener 
+### Changed
+### Fixed 
+
 ## [1.1.1] - Patch - 2025/10/24
 ### Added
 ### Changed

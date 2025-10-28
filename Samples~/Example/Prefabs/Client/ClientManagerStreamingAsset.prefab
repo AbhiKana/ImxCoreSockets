@@ -54,6 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3148034089443446752}
+  - component: {fileID: 1325942783221295}
   m_Layer: 0
   m_Name: ClientManagerStreamingAsset
   m_TagString: Untagged
@@ -78,6 +79,22 @@ Transform:
   - {fileID: 7694710270471528294}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1325942783221295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3025380445159098178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328d3cf3a9b115846a6b752cb55316c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selector: {fileID: 1567381653060554980}
+  recvMsg:
+    MessageKey: 
+    MessageValue: 
 --- !u!1 &5091970248258433824
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,5 +158,11 @@ MonoBehaviour:
   StreamingAssetFileName: baseurl.txt
   ipKey: 
   ScreenName: 
+  OnConnect:
+    m_PersistentCalls:
+      m_Calls: []
+  OnConnectionFailed:
+    m_PersistentCalls:
+      m_Calls: []
   isConnected: 0
   isReconnecting: 0

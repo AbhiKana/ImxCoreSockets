@@ -31,7 +31,7 @@ namespace ImxCoreSockets
         bool isRunning = true;
 
 
-        public static UnityAction<string> onMessageReceived;
+        public static UnityAction<string> OnMessageReceived;
         public static UnityAction<string, ClientInfo> OnclientInfoAssignment;
         public static UnityAction<bool, int> OnClientConnected;  //used for both connect and disconnect
         public static UnityAction<bool> OnServerStopped;
@@ -205,7 +205,7 @@ namespace ImxCoreSockets
                     UnityMainThreadDispatcher.Enqueue(() =>
                     {
                         //_IsMessageReceived = true;
-                        onMessageReceived?.Invoke(clientMessage); // Your event here
+                        OnMessageReceived?.Invoke(clientMessage); // Your event here
                         OnclientInfoAssignment?.Invoke(clientMessage, clientInfo);
                     });
                     Debug.Log("Received from " + clientIP + ": " + clientMessage);
@@ -217,6 +217,8 @@ namespace ImxCoreSockets
                 Debug.Log(socketException.ToString());
             }
         }
+
+        //Send message to all Clients (Use this for General Purpose and below for Specific Purpose)
         public void SendMessageToEveryOne(string msg)
         {
             if (_connectedClients != null)
